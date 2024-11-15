@@ -9,8 +9,8 @@ echo 'deb http://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/ jammy main' > 
 while true; do
     read -p "Is 'apache2' or 'apache' a critical service? (will be in readme) [Y/N " yn
     case $yn in
-        [Yy]* ) apt purge apache2; break;;
-        [Nn]* ) break;;
+        [Yy]* ) break;;
+        [Nn]* ) apt purge apache2; break;;
         * ) echo "Please answer yes or no.";;
     esac
 done
