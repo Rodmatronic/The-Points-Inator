@@ -37,7 +37,7 @@ echo "net.ipv4.conf.all.log_martians=1" >> /etc/sysctl.conf
 echo "net.ipv4.conf.all.accept_source_route=0" >> /etc/sysctl.conf
 echo "net.ipv4.conf.all.accept_redirects=0" >> /etc/sysctl.conf
 echo "net.ipv4.conf.all.proxy_arp=0" >> /etc/sysctl.conf
-
+sysctl -p
 # Remove all .mp3s and jpgs from /home recursively
 find /home -type f -name "*.mp3" -exec rm -f {} \;
 find /home -type f -name "*.jpg" -exec rm -f {} \;
